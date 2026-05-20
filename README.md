@@ -159,6 +159,53 @@ node scripts/install.mjs --global
 
 所有 prompt 都已经在 `lib/ai/prompts.ts` 抽离，跟 backend 无关；JSON 错误兜底（`jsonrepair`）也是 backend-agnostic。切完 backend 后跑一次 `npm run daily`，进 `logs/llm-calls.jsonl` 看新 backend 的调用记录。
 
+## 自托管部署（可选）
+
+每次 `npm run daily` 跑完，自动把新 HTML 推到自己的服务器，访客打开 `https://your-domain/` 就能看到当天最新报告。**默认不启用**，环境变量不设就跳过。
+
+### 一次性服务器准备
+
+假设服务器跑 Ubuntu + nginx + 已申请域名，登录用户有 sudo NOPASSWD：
+
+```bash
+# 服务器上
+sudo mkdir -p /var/www/your-domain && sudo chown -R www-data:www-data /var/www/your-domain
+```
+
+`/etc/nginx/sites-available/your-domain.conf`：
+
+```nginx
+server {
+    listen 80;
+    server_name your-domain;
+    root /var/www/your-domain;
+    index index.html;
+    location / { try_files $uri $uri/ =404; }
+}
+```
+
+启用 + 自动签 SSL：
+
+```bash
+sudo ln -s /etc/nginx/sites-available/your-domain.conf /etc/nginx/sites-enabled/
+sudo nginx -t && sudo systemctl reload nginx
+sudo certbot --nginx -d your-domain --agree-tos --redirect
+```
+
+### 本地启用 auto-deploy
+
+`.env.local`（gitignored）加两行：
+
+```
+DEPLOY_HOST=user@your-server-ip
+DEPLOY_PATH=/var/www/your-domain
+```
+
+之后：
+- 每次 `npm run daily` 跑完，自动 scp 当天 HTML 到服务器 + 刷新 `index.html`
+- 也可 `npm run deploy [YYYY-MM-DD]` 手动推任意一天
+- 部署失败不阻断 daily 本身（HTML 已经在本地 `daily_reports/` 落盘，可重跑 `npm run deploy` 补推）
+
 ## Claude Code 集成
 
 **装好后任意目录**（不必 cd 进项目）打开 Claude Code 都可用：

@@ -43,7 +43,7 @@ export const sources: SourceDef[] = [
     id: "v2ex-hot",
     name: "V2EX",
     type: "api",
-    url: "https://www.v2ex.com/feed/programmer.xml", // 实际抓 7 个技术节点 atom 合并
+    url: "https://www.v2ex.com/api/topics/show.json", // 实际抓 8 个技术节点 + replies 排序
     category: "tech",
     subcategory: "cn-community",
     enabled: true,
@@ -55,7 +55,7 @@ export const sources: SourceDef[] = [
     url: "https://linux.do/top.json?period=daily",
     category: "tech",
     subcategory: "cn-community",
-    enabled: false, // 暂停 — 当前 IP 被 Cloudflare 持续 challenge，等几天再试
+    enabled: true, // 2026-05-20 重启 — Cloudflare challenge 当前 IP 已放行
   },
   {
     id: "juejin",

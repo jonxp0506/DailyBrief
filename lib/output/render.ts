@@ -357,7 +357,11 @@ function renderSourceTabs(
   subId: string,
   sources: SourceGroup[],
 ): string {
-  if (sources.length <= 1) return "";
+  if (sources.length === 0) return "";
+  // Always render source label(s), even when there's only one. Otherwise
+  // the reader sees a bare list and can't tell which community / dataset
+  // the items are coming from (e.g. community panel with only V2EX, or
+  // X 推文 with only attentionvc-ai).
   return `<nav class="source-tabs">${sources
     .map(
       (s, i) =>
