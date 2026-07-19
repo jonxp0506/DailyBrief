@@ -25,6 +25,12 @@ name: Daily Brief
 # UTC-only and we want the user's local-timezone hour. A short "gate" job checks
 # the current hour in REPORT_TZ against REPORT_HOUR and only allows the build
 # job to run when they match. workflow_dispatch always bypasses the gate.
+#
+# Obsidian sync: in addition to the HTML site on gh-pages, this workflow also
+# generates Markdown (OUTPUT_MARKDOWN=true) and commits each day's .md file(s)
+# into the `obsidian-notes/` folder on the `main` branch. To read the daily
+# notes in Obsidian, clone this repo (or the obsidian-notes/ folder) into your
+# vault and `git pull` whenever you want fresh notes.
 
 on:
   schedule:
@@ -41,7 +47,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write  # needed to push to gh-pages branch
+  contents: write  # needed to push to gh-pages branch and to main (obsidian-notes/)
 
 concurrency:
   group: daily-brief
@@ -180,6 +186,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          # Need full history + write access on main for the Obsidian commit
+          # step below (default checkout leaves HEAD detached-ish for pushes).
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -231,7 +241,33 @@ jobs:
           REPORT_LOCALE: ${{ vars.REPORT_LOCALE || 'zh' }}
           REPORT_TZ: ${{ vars.REPORT_TZ }}
           WEB_MODE: 'true'
+          # Also write .md alongside .html so we have something to sync into
+          # Obsidian. Default is markdown-off; this flips it on for every run.
+          OUTPUT_MARKDOWN: 'true'
         run: npm run daily
+
+      - name: Commit markdown notes for Obsidian (main branch)
+        env:
+          REPORT_TZ: ${{ vars.REPORT_TZ }}
+        run: |
+          set -euo pipefail
+          TODAY=$(TZ="${REPORT_TZ:-UTC}" date +%Y-%m-%d)
+          if ls daily_reports/"$TODAY"/*.md >/dev/null 2>&1; then
+            mkdir -p "obsidian-notes/$TODAY"
+            cp daily_reports/"$TODAY"/*.md "obsidian-notes/$TODAY/"
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add obsidian-notes
+            if ! git diff --cached --quiet; then
+              git commit -m "obsidian: notes for $TODAY"
+              git push origin HEAD:main
+              echo "✓ Pushed $TODAY notes to obsidian-notes/ on main"
+            else
+              echo "No markdown changes to commit for $TODAY"
+            fi
+          else
+            echo "No markdown files found under daily_reports/$TODAY — is OUTPUT_MARKDOWN set? Skipping Obsidian commit."
+          fi
 
       - name: Build static site (index + archive)
         run: npm run build-site
