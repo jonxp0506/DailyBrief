@@ -1,149 +1,148 @@
 {
-  "hero_headline": "美伊衝突升級：美軍對伊朗發動新一輪空襲，中東局勢瀕臨全面戰爭",
-  "daily_overview": "時政面，美伊緊張局勢急劇惡化，兩名美軍士兵在約旦遭伊朗支持武裝擊斃後，美國隨即對伊朗目標發動新一輪空襲，伊朗聲稱美軍打擊了一座在建核電站，科威特境內基礎設施亦遭波及，多國呼籲克制；與此同時，俄羅斯連夜以41枚飛彈與125架無人機襲擊烏克蘭首都基輔，歐洲安全形勢持續惡化。財經面，英國正式將英國鋼鐵收歸國有，中資股東京業集團要求索賠並揚言訴諸法律；卡斯裡海輸油管道遭無人機攻擊被迫暫停裝載，油價面臨上行壓力；Fed新主席Kevin Warsh試圖重塑貨幣政策框架，縮減聯準會逾7兆美元資產負債表難度巨大。科技面，Moonshot AI發布擁有2.8兆參數的開源旗艦模型Kimi K3，引發業界對中國模型追趕前沿的重新評估；OpenAI公開AI投資回報計分卡框架，並推出GPT-Red紅隊模型以強化其他模型的網路安全防禦；LongStraw論文提出在固定GPU預算下突破200萬token的長上下文強化學習新方案。",
+  "hero_headline": "美伊交火升級，美軍士兵約旦陣亡後展開新一輪空襲",
+  "daily_overview": "時政面，美國與伊朗緊張局勢急劇升溫：兩名美軍士兵在約旦遭伊朗支持勢力殺害後，美方隨即對伊朗發動新一輪空襲，科威特一座電力與水廠遭波及起火，伊朗稱美方打擊一座在建核電廠，中東局勢有擴大為全面衝突之虞。與此同時，英國迎來新任首相Andy Burnham就職，外交走向受到廣泛關注；歐盟對俄新制裁因多國憂心衝擊本國企業而失去支持。財經面，英國英鋼（British Steel）完成國有化，前大股東中國景業要求賠償，英印貿易談判中的鋼鐵配額讓步亦引發業界警惕；聯準會縮表路徑與新主席Kevin Warsh的貨幣政策方向持續受到市場關注；裏海管線因無人機襲擊暫停裝載，油市供應再添不確定性。科技面，月之暗面推出擁有2.8兆參數的開源大模型Kimi K3，在編程與多模態任務上達到前沿水準，引發開源社群廣泛討論；OpenAI發布AI投資回報評分卡，並推出GPT-Red安全對抗模型以強化旗下系統防禦能力。",
   "tech_briefs": [
     {
-      "title": "Moonshot AI發布2.8兆參數開源模型Kimi K3，挑戰頂級閉源模型",
-      "url": "https://news.smol.ai/issues/26-07-16-kimi-k30/",
-      "source": "Smol AI News",
-      "summary": "Moonshot AI推出Kimi K3，擁有2.8兆參數、50B活躍參數、100萬token上下文視窗及原生多模態輸入，採用自研Kimi Delta Attention機制。性能對標Claude Opus 4.8，但推理成本僅相當於Sonnet 5定價，引發業界對中國開源模型追趕速度的重新評估。（多家報導）",
+      "title": "月之暗面Kimi K3開源大模型發布，2.8兆參數達前沿水準",
+      "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
+      "source": "Latent Space",
+      "summary": "Moonshot AI推出Kimi K3，擁有2.8兆總參數（激活50B），支援100萬token上下文及原生多模態輸入，在編程、代理任務與長程知識推理上表現達到Claude Opus 4.8等級，但定價對標Sonnet 5。這是迄今最大規模的開源權重模型，重新拉近中國模型與前沿的距離。（多家報導）",
       "importance": 9
     },
     {
-      "title": "OpenAI推出GPT-Red紅隊模型，以「AI駭客」強化模型網路安全防禦",
-      "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
-      "source": "MIT Tech Review AI",
-      "summary": "OpenAI開發了名為GPT-Red的大型語言模型，專門用於模擬駭客攻擊，作為其他模型的「對抗訓練夥伴」，藉此提升自家AI系統對抗網路攻擊的能力。OpenAI已發布最新版本，並透露此工具已成為內部安全評估的核心環節。",
+      "title": "OpenAI發布AI投資回報評分卡，並推出GPT-Red安全對抗模型",
+      "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+      "source": "OpenAI News",
+      "summary": "OpenAI財務長Sarah Friar提出以「有效工作量、單次成功任務成本、可靠性及算力回報」衡量AI ROI的評分框架。同期，OpenAI另建GPT-Red——一個專門用於模擬駭客攻擊的對抗性語言模型，作為訓練其他模型防禦能力的「陪練夥伴」。（多家報導）",
       "importance": 8
     },
     {
-      "title": "OpenAI發布AI時代投資回報計分卡，以「有效工作量」衡量AI價值",
-      "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
-      "source": "OpenAI News",
-      "summary": "OpenAI財務長Sarah Friar提出一套衡量AI投資回報的實用框架，核心指標包括有效工作量、每項任務成功成本、可靠性與算力回報，旨在幫助企業脫離炒作敘事、以具體產出評估AI部署效益。",
-      "importance": 7
-    },
-    {
-      "title": "LongStraw論文突破強化學習長上下文瓶頸，在固定GPU預算下超越200萬token",
+      "title": "LongStraw研究突破：固定GPU預算下強化學習訓練超越200萬token",
       "url": "https://huggingface.co/papers/2607.14952",
       "source": "HuggingFace Trending Papers",
-      "summary": "目前AI推理可處理百萬token上下文，但強化學習後訓練多半停留在25萬token以下。LongStraw提出新訓練策略，在固定GPU預算內將RL後訓練上下文延伸至200萬token以上，有助縮小訓練與推理階段的上下文差距，對長文件理解與多步驟代理任務具重要意義。",
+      "summary": "現有大型語言模型在推理時可使用百萬token上下文，但強化學習後訓練階段通常被壓縮在25.6萬token以內。LongStraw提出一套在固定GPU預算下突破200萬token的RL訓練方案，有望縮小訓練與推理上下文長度的落差，對長文本推理能力提升意義重大。",
       "importance": 7
     },
     {
-      "title": "kvcache-ai/ktransformers：支援異構硬體的靈活LLM推理優化框架",
+      "title": "ktransformers：支援異構硬體的LLM推理與微調優化框架",
       "url": "https://github.com/kvcache-ai/ktransformers",
       "source": "GitHub Trending",
-      "summary": "ktransformers是一套針對大型語言模型的推理與微調優化框架，支援在CPU、GPU、記憶體混合的異構硬體環境下高效運行，讓資源有限的研究者或企業也能部署更大參數的模型，降低大規模LLM的硬體門檻。",
+      "summary": "ktransformers是一個靈活的開源框架，專為在CPU、GPU等異構硬體環境下優化大型語言模型的推理速度與微調效率而設計。它允許開發者在資源受限的設備上運行更大規模的模型，降低本地部署LLM的門檻，目前在GitHub持續獲得關注。",
       "importance": 6
+    },
+    {
+      "title": "氣象數據遭蓄意破壞的風險上升，影響航空與電網決策",
+      "url": "https://www.technologyreview.com/2026/07/17/1140622/weather-data-sabotage/",
+      "source": "MIT Tech Review AI",
+      "summary": "MIT技術評論指出，全球航班調度、電網運營與農業高度依賴天氣預報數據，但針對氣象數據的蓄意干擾與造假風險正在攀升。一旦數據遭到污染，連鎖決策錯誤可能造成重大基礎設施損失，目前相關防護機制尚不完善。",
+      "importance": 7
     }
   ],
   "finance_briefs": [
     {
-      "title": "英國正式將英國鋼鐵收歸國有，中資京業集團要求索賠並揚言提告",
+      "title": "英鋼完成國有化，中國景業要求賠償並揚言法律行動",
       "url": "https://www.ft.com/content/dc61c278-c3eb-48b5-8f79-f949eae7a601?syn-25a6b1a6=1",
       "source": "Financial Times",
-      "summary": "英國唯一仍以原生鐵水煉鋼的廠房正式收歸國有。中資股東京業集團指英國政府「幾乎未給予任何補償」，將透過法律途徑追討賠償。英印貿易協定中的鋼鐵配額讓步亦令業界憂慮威爾斯廠房前景。（多家報導）",
-      "importance": 8
+      "summary": "英國唯一仍在生產原生鋼的英鋼廠正式收歸國有，前大股東中國景業集團批評政府「幾乎零補償」並宣稱將訴諸法律手段。英印貿易談判中的鋼鐵配額讓步同時引發威爾斯Llanwern廠業者警惕。（多家報導）",
+      "importance": 9
     },
     {
-      "title": "卡斯裡海輸油管遭無人機攻擊暫停裝載，中東緊張加劇油價壓力",
+      "title": "美伊緊張加劇，裏海管線遭無人機攻擊後暫停石油裝載",
       "url": "https://www.bloomberg.com/news/articles/2026-07-19/caspian-pipeline-consortium-halts-loadings-after-drone-strike",
       "source": "Bloomberg Markets",
-      "summary": "里海管道財團在俄羅斯黑海岸的輸油終端遭無人機攻擊後被迫暫停裝卸，哈薩克政府呼籲立即停止此類攻擊。此事件疊加美伊霍爾木茲海峽緊張態勢，進一步加劇全球燃料供應不確定性。",
+      "summary": "裏海管線聯盟（CPC）位於俄羅斯黑海岸的石油裝卸終端遭無人機攻擊後，哈薩克政府緊急呼籲停止此類攻擊。此事件疊加美伊衝突升溫與荷姆茲海峽風險，進一步收緊全球石油供應預期。",
+      "importance": 9
+    },
+    {
+      "title": "聯準會縮表路線圖受矚目，新主席Warsh的貨幣政策走向存爭議",
+      "url": "https://www.economist.com/finance-and-economics/2026/07/16/how-to-shrink-the-feds-7trn-balance-sheet",
+      "source": "The Economist Finance",
+      "summary": "美聯準會資產負債表規模達7兆美元，新主席Kevin Warsh面臨如何縮表的艱難抉擇。《經濟學人》分析指出，量化緊縮的速度與節奏將深刻影響債券市場，Warsh集結重量級顧問團隊，試圖重塑聯準會政策框架。（多家報導）",
       "importance": 8
     },
     {
-      "title": "Fed新主席Warsh面臨縮減逾7兆美元資產負債表的艱鉅挑戰",
-      "url": "https://www.economist.com/finance-and-economics/2026/07/16/how-to-shrink-the-feds-7trn-balance-sheet",
-      "source": "The Economist Finance",
-      "summary": "新任聯準會主席Kevin Warsh試圖推動貨幣政策框架改革，但大規模縮減近7兆美元資產負債表的難度極高。量化緊縮不僅受限於市場流動性，還面臨政治阻力，外界普遍認為逆轉量化寬鬆效果曠日持久。（多家報導）",
-      "importance": 7
-    },
-    {
-      "title": "中國貿易順差縮窄、財政走向緊縮，經濟結構性壓力浮現",
-      "url": "https://www.economist.com/finance-and-economics/2026/07/15/chinas-trade-gap-is-narrowing-and-other-surprises",
-      "source": "The Economist Finance",
-      "summary": "《經濟學人》分析指出，中國貿易順差意外收窄，財政政策亦在無意間趨向緊縮，反映內需疲軟與出口結構調整壓力並存，對全球供應鏈與商品市場均有潛在影響。",
-      "importance": 7
-    },
-    {
-      "title": "英國北海油氣探勘禁令維持，能源政策走向引發業界與工會爭議",
+      "title": "英國新首相Burnham維持北海禁止勘探許可政策",
       "url": "https://www.ft.com/content/d9631aae-1100-43e0-a09a-e49f5c21f896?syn-25a6b1a6=1",
       "source": "Financial Times",
-      "summary": "英國新首相Burnham宣布維持北海油氣探勘禁令，同時傳出將提供其他形式支持。石油天然氣業界及工會均批評此決定損害就業與能源安全，政策走向存在矛盾訊號。（多家報導）",
-      "importance": 6
+      "summary": "新任英國首相Andy Burnham宣布維持對北海新勘探許可的禁令，此舉遭石油天然氣業界及工會批評。BBC報導指Burnham同時釋出部分產業支持訊號，能源政策走向引發市場關注。（多家報導）",
+      "importance": 7
+    },
+    {
+      "title": "歐盟對俄新制裁因成員國憂慮商業衝擊而難獲支持",
+      "url": "https://www.ft.com/content/eb0cd740-e45d-4dd7-ab9a-6f6643bb32ee?syn-25a6b1a6=1",
+      "source": "Financial Times",
+      "summary": "多個歐盟成員國以本國大企業將受損為由，拒絕支持新一輪對俄制裁措施，導致歐盟制裁共識出現裂縫。制裁凝聚力的下降可能削弱歐洲對俄戰略施壓能力。",
+      "importance": 8
     }
   ],
   "politics_briefs": [
     {
-      "title": "美伊軍事衝突升級：美軍空襲伊朗目標，中東瀕臨全面戰爭邊緣",
-      "url": "https://www.nytimes.com/live/2026/07/19/world/iran-war-strikes-trump-hormuz",
-      "source": "NYT World",
-      "summary": "兩名美軍士兵在約旦遭伊朗支持武裝擊斃後，美國對伊朗目標發動新一輪空襲。伊朗聲稱美軍打擊了在建核電站，科威特亦報告基礎設施遭攻擊起火；美國同步增派戰機至中東，霍爾木茲海峽緊張態勢持續惡化。（多家報導）",
+      "title": "美伊衝突急劇升溫：美軍空襲伊朗後雙方持續交火",
+      "url": "https://www.theguardian.com/world/live/2026/jul/19/middle-east-crisis-live-us-launches-new-round-of-airstrikes-to-swiftly-punish-iran-after-american-troops-killed",
+      "source": "The Guardian",
+      "summary": "兩名美軍士兵在約旦遭伊朗支持勢力殺害後，美國展開新一輪空襲「迅速懲罰」伊朗，科威特一座電力水廠遭波及，伊朗聲稱美方擊中在建核電廠。美國同步向中東增派戰機，外界憂慮局勢演變為全面戰爭。（多家報導）",
       "importance": 10
     },
     {
-      "title": "俄羅斯連夜以逾百架無人機飛彈攻擊基輔，烏克蘭安全形勢惡化",
-      "url": "https://www.npr.org/2026/07/19/nx-s1-5899518/russia-attack-kyiv",
+      "title": "英國新首相Andy Burnham正式就職，北方工黨政治人物主導外交新局",
+      "url": "https://www.npr.org/2026/07/19/g-s1-134001/andy-burnham-new-british-prime-minister",
       "source": "NPR World",
-      "summary": "俄羅斯對烏克蘭發動大規模夜間攻擊，動用41枚飛彈及125架攻擊無人機，烏克蘭空軍確認攻擊目標包括首都基輔。此輪攻勢為近期規模較大的一次，再次引發歐洲盟國對防空援助緊迫性的討論。",
-      "importance": 9
+      "summary": "前曼徹斯特市長Andy Burnham接替Keir Starmer出任英國首相，其政治立場深受英格蘭南北階級差異塑造。上任首日即面對北海能源政策、英鋼國有化及英印貿易談判等多重考驗。",
+      "importance": 8
     },
     {
-      "title": "歐盟對俄新制裁遭成員國抵制，擔憂衝擊本國大型企業利益",
-      "url": "https://www.ft.com/content/eb0cd740-e45d-4dd7-ab9a-6f6643bb32ee?syn-25a6b1a6=1",
-      "source": "Financial Times",
-      "summary": "多個歐盟成員國拒絕支持新一輪對俄制裁方案，理由是相關措施可能損害本國大型企業。此舉令歐盟對俄施壓立場出現明顯裂痕，削弱制裁政策的整體效力。",
+      "title": "香港書展獨立書店遭搜查，涉中國身份認同書籍意外爆紅",
+      "url": "https://www.dw.com/zh/墙外文摘：《唯红花绽放》爆红，再次拷问中国人身份与归属/a-78024886?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "香港書展首日，兩家獨立書店遭警方搜查，五人涉嫌煽動罪被捕，涉事書籍《唯紅花綻放：習近平時代的認同與歸屬》因此意外在全球引發廣泛關注，再次觸發海外華人對中國身份認同的討論。",
       "importance": 7
     }
   ],
-  "editor_note": "今日最大變數在於美伊軍事衝突的快速升級——霍爾木茲海峽若真正封鎖，能源市場與全球供應鏈將面臨系統性衝擊，需持續密切關注事態發展及各方外交反應。",
+  "editor_note": "今日最關鍵信號是美伊軍事衝突的快速升級，任何進一步誤判都可能引發油價劇烈波動並衝擊全球供應鏈；同期Kimi K3的開源里程碑提示：中美AI競爭的戰場已從閉源蔓延至開源生態。",
   "keywords": [
     "美伊衝突",
     "Kimi K3",
-    "英國鋼鐵國有化",
-    "卡斯裡海管道",
-    "聯準會資產負債表",
-    "俄烏戰爭",
-    "GPT-Red",
-    "霍爾木茲海峽"
+    "英國新首相",
+    "英鋼國有化",
+    "聯準會縮表",
+    "裏海管線",
+    "香港書展"
   ],
   "trading": {
-    "market_overview": "本期觀察期內，美股整體技術面偏弱。S&P 500 ETF（SPY）收報 743.29，單日下跌 0.99%，MACD 死叉訊號已觸發，RSI14 為 48.4 位於中性偏弱區間，價格略低於 SMA20（745.02）與 SMA50（744.38）。Nasdaq 100 ETF（QQQ）表現更為疲軟，單日跌 1.50%，近 5 日累計跌幅達 4.16%，MACD 為 -2.05，RSI14 跌至 42，技術面承壓明顯。個股方面 Apple 是少數逆勢走強的標的，RSI14 達超買的 71.6，多頭排列完整；而 Tesla、Meta、Alphabet 等均出現不同程度的均線破位與 MACD 死叉。加密貨幣方面，加密恐慌貪婪指數當前讀數僅 28，市場情緒處於「恐慌」區間；加密總市值約 2.29 兆美元，24 小時變化 +0.52%，BTC 主導率達 56.5%。BTC 現報 64565，RSI14 為 54.2，MACD 已上穿訊號線（239.41 vs -79.03），短線動能轉正，但價格距 SMA200（73044）仍有顯著差距。台灣市場今日出現劇烈波動，加權指數單日急挫 6.47%，台積電（2330.TW）單日跌幅達 7.29%，RSI14 降至 40.5，技術面壓力集中。商品與外匯方面，黃金期貨呈空頭排列，SMA20/SMA50/SMA200 均高於現價 4018.80；原油期貨近 5 日大漲 14.52% 形成短線強勢反彈；美元指數 DXY 維持多頭排列，RSI14 為 52.1，美元短期技術面相對穩健。",
+    "market_overview": "本交易日技術面整體呈現防禦氛圍。美股方面，S&P 500 ETF（SPY）下跌 0.99%，RSI14 為 48.4 並觸發 MACD 死叉；Nasdaq 100 ETF（QQQ）跌幅擴大至 1.50%，5 日累跌 4.16%，RSI14 滑落至 42，MACD 負值 -2.05 且低於訊號線，動能持續偏弱。個股中 Apple 以 RSI 71.6 進入超買、Tesla 與 Meta 承壓下跌為代表，大型科技股分化明顯。台灣股市技術面承壓最重：台灣加權指數單日重挫 6.47%，台積電（2330.TW）跌 7.29%，元大台灣 50（0050.TW）及富邦台 50（006208.TW）RSI14 分別跌至 38.6 與 35.5，多檔已逼近超賣區。加密貨幣方面，加密恐慌貪婪指數報 28，處於「恐慌」區間；加密貨幣總市值為 2.29 兆美元，24 小時微幅收縮 0.52%，BTC 主導率維持 56.5%。Bitcoin RSI14 為 53.9，MACD 正值但 Ethereum 距 52 周高點仍下跌 62.3%，整體加密市場情緒偏謹慎。商品外匯方面，WTI 原油短線反彈強勁（5 日 +14.52%），黃金期貨呈空頭排列，MACD 負值。美元指數 DXY 多頭排列，10 年期美債收益率維持 4.54%，三均線同為多頭排列，宏觀流動性環境尚屬穩定，但 VIX 單日急升逾 12% 值得留意。",
     "watchlist": [
       {
         "symbol": "AAPL",
         "display_name": "Apple (AAPL)",
         "stance": "偏上行",
-        "rationale": "AAPL 當前報價 333.74，近 5 日上漲 5.84%，距 52 周高僅 -0.37%，處於極近高位。三條均線呈多頭排列（SMA20=305.52、SMA50=302.65、SMA200=274.22），價格顯著高於所有均線。RSI14 達 71.6，進入超買區，MACD 為 8.8154 遠高於訊號線 5.4783，動能柱持續擴張。雖超買狀態暗示短線回調風險，但指標整體仍偏強勢。"
+        "rationale": "Apple 當前價格 333.74 美元，5 日漲幅達 5.84%，距 52 周高點僅 -0.37%，顯示強勢動能。三均線呈多頭排列（SMA20: 305.52 / SMA50: 302.65 / SMA200: 274.22），價格全數位於均線上方。RSI14 讀數 71.6 已進入超買區，MACD 為 8.8154 高於訊號線 5.4783，紅柱擴張中。超買狀態意味短期存在技術性修正壓力，但整體指標結構仍偏上行。"
       },
       {
         "symbol": "TSLA",
         "display_name": "Tesla (TSLA)",
         "stance": "偏下行",
-        "rationale": "TSLA 當前報 380.84，近 1 日下跌 2.61%，近 5 日下跌 6.60%，距 52 周高已回落 -23.65%。三條均線呈空頭排列（SMA20=397.85、SMA50=409.80、SMA200=417.05），價格低於全部均線。MACD 為 -3.6456，低於訊號線 -1.975，MACD 死叉確立，負向動能明顯。RSI14 為 42.6，尚未超賣但持續走軟，整體技術面偏弱。"
+        "rationale": "Tesla 當前報 380.84 美元，1 日跌 2.61%、5 日跌 6.60%，距 52 周高點已回落 23.65%。三均線呈空頭排列（SMA20: 397.85 / SMA50: 409.80 / SMA200: 417.05），價格全數低於各條均線。MACD 為 -3.6456，死叉確認且低於訊號線 -1.975，動能持續向下。RSI14 讀數 42.6，尚未達超賣但持續走軟，技術面整體偏空。"
       },
       {
         "symbol": "^TWII",
         "display_name": "台灣加權指數 (^TWII)",
         "stance": "偏下行",
-        "rationale": "台灣加權指數當前報 42671.27，單日急挫 6.47%，近 5 日累計下跌 5.92%，距 52 周高已回落 -11.51%。價格跌破 SMA20（45850.92）與 SMA50（44340.02），MACD 為 79.46 但訊號線高達 489.46，形成明顯負向背離，動能快速衰退。RSI14 跌至 37.7，逼近超賣邊界，短線技術面呈現明顯壓力。"
+        "rationale": "台灣加權指數單日重挫 6.47%、5 日累跌 5.92%，距 52 周高點回落 11.51%，跌勢顯著。當前報 42671.27，已跌破 SMA20（45850.92）及 SMA50（44340.02），技術支撐告急。RSI14 跌至 37.7，逼近超賣區邊緣（40 以下）。MACD 值 79.46 遠低於訊號線 489.46，柱狀體呈大幅綠柱，顯示下行動能強烈，指標結構明顯偏空。"
       },
       {
         "symbol": "CL=F",
         "display_name": "WTI 原油期貨 (CL=F)",
         "stance": "中性",
-        "rationale": "WTI 原油期貨當前報 81.78，單日反彈 3.58%，近 5 日大幅上漲 14.52%，短線動能顯著轉強。然而 SMA50 達 85.37，價格仍在 50 日均線之下，且 MACD 為 -1.3852，雖低於訊號線 -3.4321 形成收窄，顯示空方動能減弱但尚未翻正。RSI14 為 57.2，位於中性偏強區間，技術面呈現短線反彈但中期方向未明的拉鋸狀態。"
+        "rationale": "WTI 原油期貨報 81.78 美元，單日大漲 3.58%、5 日漲幅達 14.52%，短線反彈力道強勁。價格已突破 SMA20（73.37）及 SMA200（74.59），但仍低於 SMA50（85.37），結構尚未完全翻多。RSI14 為 57.2，處於正常偏強區間。MACD 為 -1.3852 但高於訊號線 -3.4321，動能收斂中。距 52 周高點仍有 -31.55% 差距，上方空間受壓，中短期訊號分歧，整體列為中性。"
       },
       {
         "symbol": "^VIX",
         "display_name": "VIX 恐慌指數 (^VIX)",
         "stance": "偏上行",
-        "rationale": "VIX 當前報 18.77，單日急升 12.19%，近 5 日累計上漲 24.88%，顯示市場恐慌情緒快速升溫。價格突破 SMA20（17.01）與 SMA50（17.32），並接近 SMA200（18.69）。MACD 出現金叉訊號，MACD 值 -0.2255 上穿訊號線 -0.375，動能轉強。RSI14 為 55.9，位於中性偏強區，VIX 上行通常對應股市波動加劇的技術環境。"
+        "rationale": "VIX 單日急升 12.19%、5 日漲幅 24.88%，當前報 18.77，已突破 SMA20（17.01）、SMA50（17.32）及 SMA200（18.69），三均線形成多頭排列。MACD 出現金叉訊號，MACD 值 -0.2255 向上穿越訊號線 -0.375，動能轉強。RSI14 為 55.9，尚有上行空間。VIX 偏上行意味市場隱含波動率正在抬升，對應整體股市風險情緒趨於緊張。"
       }
     ],
-    "risk_caveat": "本報告所有內容均基於公開行情數據計算所得的技術指標，僅供技術指標解讀參考，不構成任何投資建議或買賣依據。過去走勢不代表未來表現，市場存在不可預測的風險，讀者應自行審慎判斷。",
+    "risk_caveat": "本報告所有內容均基於公開行情資料計算所得之技術指標，僅供技術指標解讀參考，不構成任何投資建議或買賣依據。過去走勢不代表未來表現，指標訊號存在滯後性與誤判可能，投資人應自行承擔相關風險。",
     "tickers": [
       {
         "symbol": "SPY",
@@ -371,18 +370,18 @@
         "group": "crypto",
         "currency": "USD",
         "exchangeName": "CCC",
-        "currentPrice": 64565.85,
-        "pct1Day": -0.3561167668298598,
-        "pct5Day": -0.600810703621107,
-        "pct52WeekHigh": -48.83768824673785,
-        "pct52WeekLow": 11.80666278934495,
-        "sma20": 63130.8814453125,
-        "sma50": 63353.464296875,
-        "sma200": 73044.010859375,
-        "rsi14": 54.15206100583612,
-        "macd": 239.40546887709206,
-        "macdSignal": -79.03106673119079,
-        "macdHistogram": 318.43653560828284,
+        "currentPrice": 64514.99,
+        "pct1Day": -0.4346085376535862,
+        "pct5Day": -0.6791097234220371,
+        "pct52WeekHigh": -48.87798997242985,
+        "pct52WeekLow": 11.718590118274003,
+        "sma20": 63128.33828125,
+        "sma50": 63352.44703125,
+        "sma200": 73043.75654296875,
+        "rsi14": 53.918228634796776,
+        "macd": 235.34799914775067,
+        "macdSignal": -79.84256067705907,
+        "macdHistogram": 315.1905598248097,
         "trend": "neutral",
         "rsiState": "normal",
         "signals": []
@@ -393,18 +392,18 @@
         "group": "crypto",
         "currency": "USD",
         "exchangeName": "CCC",
-        "currentPrice": 1870.59,
-        "pct1Day": 0.49414146575759943,
-        "pct5Day": -0.9997385425663663,
-        "pct52WeekHigh": -62.23878032990474,
-        "pct52WeekLow": 24.167469130717528,
-        "sma20": 1782.7093933105468,
-        "sma50": 1734.6027416992188,
-        "sma200": 2183.638041381836,
-        "rsi14": 59.539214911575215,
-        "macd": 38.34731225591486,
-        "macdSignal": 25.32712365671897,
-        "macdHistogram": 13.020188599195887,
+        "currentPrice": 1867.58,
+        "pct1Day": 0.33243453595901745,
+        "pct5Day": -1.1590416431853552,
+        "pct52WeekHigh": -62.29954258737804,
+        "pct52WeekLow": 23.967669023754773,
+        "sma20": 1782.5588928222655,
+        "sma50": 1734.5425415039062,
+        "sma200": 2183.622991333008,
+        "rsi14": 59.272439820157224,
+        "macd": 38.10719751677675,
+        "macdSignal": 25.27910070889135,
+        "macdHistogram": 12.828096807885402,
         "trend": "neutral",
         "rsiState": "normal",
         "signals": []
@@ -415,18 +414,18 @@
         "group": "crypto",
         "currency": "USD",
         "exchangeName": "CCC",
-        "currentPrice": 76.17,
-        "pct1Day": 0.9396826064432348,
-        "pct5Day": -2.0478311507926557,
-        "pct52WeekHigh": -69.9182377940199,
-        "pct52WeekLow": 26.078586833999008,
-        "sma20": 77.94335479736328,
-        "sma50": 73.34236938476562,
-        "sma200": 90.07918407440185,
-        "rsi14": 50.025808271332224,
-        "macd": 0.2837142606531131,
-        "macdSignal": 0.7406808372414794,
-        "macdHistogram": -0.45696657658836626,
+        "currentPrice": 76,
+        "pct1Day": 0.7144003950332896,
+        "pct5Day": -2.2664456801922284,
+        "pct52WeekHigh": -69.98537576927284,
+        "pct52WeekLow": 25.79719836397432,
+        "sma20": 77.93485488891602,
+        "sma50": 73.33896942138672,
+        "sma200": 90.07833408355712,
+        "rsi14": 49.563187054910294,
+        "macd": 0.2701531531589012,
+        "macdSignal": 0.7379686157426371,
+        "macdHistogram": -0.46781546258373585,
         "trend": "neutral",
         "rsiState": "normal",
         "signals": []
@@ -746,13 +745,13 @@
       "timestamp": "2026-07-19T00:00:00.000Z"
     },
     "crypto_global": {
-      "totalMarketCapUsd": 2292162346238.194,
-      "total24hVolumeUsd": 40390177410.30094,
-      "marketCapChangePct24h": 0.5209159468463769,
-      "btcDominance": 56.46751388229648,
-      "ethDominance": 9.843452877376018,
-      "activeCryptocurrencies": 17657
+      "totalMarketCapUsd": 2292240838517.736,
+      "total24hVolumeUsd": 40520263652.44586,
+      "marketCapChangePct24h": 0.5243581619439536,
+      "btcDominance": 56.4903390567855,
+      "ethDominance": 9.83704130671233,
+      "activeCryptocurrencies": 17660
     },
-    "generated_at": "2026-07-19T16:06:55.288Z"
+    "generated_at": "2026-07-19T16:34:03.043Z"
   }
 }
